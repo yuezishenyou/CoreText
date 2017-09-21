@@ -1,0 +1,45 @@
+//
+//  PrefixHeader.pch
+//  CoreText
+//
+//  Created by maoziyue on 2017/9/21.
+//  Copyright © 2017年 maoziyue. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "CoreText/CoreText.h"
+#import "UIView+frameAdjust.h"
+#endif
+
+#ifdef DEBUG
+#define debugLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define debugLog(...)
+#define debugMethod()
+#endif
+
+#define RGB(A, B, C)    [UIColor colorWithRed:A/255.0 green:B/255.0 blue:C/255.0 alpha:1.0]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif /* PrefixHeader_pch */
